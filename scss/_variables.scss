@@ -276,8 +276,8 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   #040B11 !default;
+$body-color:                #FFFFFF !default;
 $body-text-align:           null !default;
 
 
@@ -915,20 +915,20 @@ $zindex-tooltip:                    1080 !default;
 // scss-docs-start nav-variables
 $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
-$nav-link-font-size:                null !default;
-$nav-link-font-weight:              null !default;
-$nav-link-color:                    null !default;
+$nav-link-font-size:                0.875rem !default;
+$nav-link-font-weight:              900 !default;
+$nav-link-color:                    $white !default;
 $nav-link-hover-color:              null !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
-$nav-link-disabled-color:           $gray-600 !default;
+$nav-link-disabled-color:           $white !default;
 
-$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-color:             #040B11 !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $gray-700 !default;
-$nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-color:        #FFBE00 !default;
+$nav-tabs-link-active-bg:           #040B11 !default;
+$nav-tabs-link-active-border-color: #040B11 #040B11 #FFBE00 $nav-tabs-link-active-bg !default;
 
 $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
