@@ -14,49 +14,93 @@
 
 <body>
   <div class="container my-5">
-    
     <div class="row">
-      <div class="barraSuperior" style="display: space-between;">
-        <div class="back" >
-          <i class='fas fa-chevron-left'></i>
-        </div>
-        <div class="task">
-          Task
-        </div>
-        <div class="notification">
-          <img src="./dist/resources/noun_notification_3350881.png" alt="notification" />
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-            role="tab" aria-controls="home" aria-selected="true">All</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-            role="tab" aria-controls="profile" aria-selected="false">In Progress</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-            role="tab" aria-controls="contact" aria-selected="false">Started</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-            role="tab" aria-controls="contact" aria-selected="false">Completed</button>
-        </li>
+      <ul class="flex-barra">
+        <li class="flex-item-back"><i class='fas fa-chevron-left'></i></li>
+        <li class="flex-item-task">Task</li>
+        <li class="flex-item-notifation"><img src="./dist/resources/noun_notification_3350881.png" alt="notification" /></li>
       </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">..sa.</div>
-        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">..23.</div>
-        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">..*/*.</div>
+    </div>
+
+    <div class="row my-3">
+      <div class="flex-button">
+        <p class="create">CREATE + </p>
       </div>
     </div>
 
+    <div class="row">
+      <ul class="flex-menu">
+        <li class="flex-item-all"><button class="all">All</button></li>
+        <li class="flex-item-progress"><button class="progress-text">In Progress</button></li>
+        <li class="flex-item-started"><button class="started">Started</button></li>
+        <li class="flex-item-completed"><button class="completed">Completed</button></li>
+      </ul>
+    </div>
+
+    <div class="row my-3">
+      <ul class="flex-upcoming">
+        <li class="flex-item-upcoming"><span class="upcoming-task">Upcoming Tasks</span><span class="task-num">5</span></li>
+      </ul>
+    </div>
   </div>
 
+  <div class="row">
+    <ul class="flex-orders">
+      <li class="flex-item-order1">
+        <span class="num-order">Order #890PO90</span><br>
+        <span class="name-order">Bryan Williams </span><br>
+        <div class="flex-progress">
+          <div class="flex-item-progress">
+            <span class="progress-order">Progress</span>
+          </div>
+          <div class="flex-item-percetange">
+            <span class="percentage">20%</span>
+          </div>
+        </div>
+        <span class="name-bar">
+          <div class="progress bar-margin">
+            <div class="progress-bar " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </span>
+        <div class="flex-days">
+          <div class="flex-item-day">
+            <span class="day-left">1 days left</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="flex-item-order1">
+        <span class="num-order">Order #890PO90</span><br>
+        <span class="name-order">Marcus Klaus </span><br>
+        <div class="flex-progress">
+          <div class="flex-item-progress">
+            <span class="progress-order">Progress</span>
+          </div>
+          <div class="flex-item-percetange">
+            <span class="percentage">20%</span>
+          </div>
+        </div>
+        <span class="name-bar">
+          <div class="progress bar-margin">
+            <div class="progress-bar " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </span>
+        <div class="flex-days">
+          <div class="flex-item-day">
+            <span class="day-left">3 days left</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="row my-3">
+      <ul class="flex-statics">
+        <li class="flex-item-static">Statistics</li>
+        <li class="flex-item-icon">holas</li>
+      </ul>
+    </div>
+  </div>
   <script src="./dist/js/bootstrap.js"></script>
 </body>
 

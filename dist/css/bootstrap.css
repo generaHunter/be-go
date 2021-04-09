@@ -4682,12 +4682,12 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem;
+    background-position-x: 0.06rem;
   }
 }
 .progress {
   display: flex;
-  height: 1rem;
+  height: 0.06rem;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
@@ -4699,10 +4699,10 @@ textarea.form-control-lg {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  color: #fff;
+  color: #040B11;
   text-align: center;
   white-space: nowrap;
-  background-color: #0d6efd;
+  background-color: #FFBE00;
   transition: width 0.6s ease;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4713,7 +4713,7 @@ textarea.form-control-lg {
 
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: 1rem 1rem;
+  background-size: 0.06rem 0.06rem;
 }
 
 .progress-bar-animated {
