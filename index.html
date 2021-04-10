@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Be-go</title>
   <!--Boostrap-->
   <link rel="stylesheet" href="./dist/css/bootstrap.css">
   <link rel="stylesheet" href="./dist/css/index.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <li class="flex-item-task">Task</li>
         <li class="flex-item-notifation"><img src="./dist/resources/noun_notification_3350881.png" alt="notification" /></li>
       </ul>
-    </div>
+    
 
     <div class="row my-3">
       <div class="flex-button">
@@ -97,10 +99,156 @@
     <div class="row my-3">
       <ul class="flex-statics">
         <li class="flex-item-static">Statistics</li>
-        <li class="flex-item-icon">holas</li>
+        <li class="flex-item-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+          </svg>
+          <span class="vertical-bar"></span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </li>
       </ul>
     </div>
+    
   </div>
+
+  <div class="row">
+
+    <div class="flex-rectangule my-1"> 
+      <div class="flex-item-rectangule border-0">
+        <div class="flex-card">
+          <div class="flex-card-item"><img src="dist/resources/menu.png"></div>
+          <div class="flex-card-item2">
+            <span class="card-title num-project">50</span>
+            <span class="card-text subtitle-project">Total projects</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-vertical"></div>
+
+      <div class="flex-item-rectangule border-0">
+        <div class="flex-card">
+          <div class="flex-card-item"><img src="dist/resources/checked.png"></div>
+          <div class="flex-card-item2">
+            <span class="card-title num-project">15</span>
+            <span class="card-text subtitle-project">Completed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="line-vertical d-none d-sm-none d-md-block"></div>
+      <div class="line-horizontal d-block d-sm-block d-md-none"></div>
+
+      <div class="flex-item-rectangule border-0">
+        <div class="flex-card">
+          <div class="flex-card-item"><img src="dist/resources/flash.png"></div>
+          <div class="flex-card-item2">
+            <span class="card-title num-project">10</span>
+            <span class="card-text subtitle-project">In Progress</span>
+          </div>
+        </div>
+      </div>
+      <div class="line-vertical">
+      </div>
+
+      
+      <div class="flex-item-rectangule border-0">
+        <div class="flex-card">
+          <div class="flex-card-item"><img src="dist/resources/clock.png"></div>
+          <div class="flex-card-item2">
+            <span class="card-title num-project">2</span>
+            <span class="card-text subtitle-project">Delayed</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="chart-space">
+      <div class="row">
+        <ul class="flex-calendars">
+          <li class="flex-item-calendar">Day</li>
+          <li class="flex-item-calendar">Week</li>
+          <li class="flex-item-month"><button class="month">Month</button></li>
+          <li class="flex-item-calendar">Year</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="total">
+          <span class="dolar">$</span><span class="cantidad">13,543</span>
+        </div>
+      </div>
+      <div class="row">
+        <canvas id="myChart" width="400" height="130"></canvas>
+      </div>
+  
+    </div>
+  
+  </div>
+</div>
+
+
+<script>
+var ctx = document.getElementById('myChart');
+
+
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
+        datasets: [{
+            label: '# of Votes',
+            data: [14, 18, 8, 16, 12, 20],
+            tension: 0.4,
+            pointRadius: 0,
+            backgroundColor: [
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00'
+            ],
+            borderColor: [
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00',
+                '#FFBE00'
+            ],
+            borderWidth: 4
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                display: false,
+            },
+            x: {
+              ticks:{
+                color: '#89898A',
+                font: {
+                        size: 25,
+                        family: "'Avenir'"
+                    }
+              }
+            }
+        },
+      plugins: {
+        legend: false,
+        tooltip: true,
+        
+    },
+    }
+});
+
+</script>
   <script src="./dist/js/bootstrap.js"></script>
 </body>
 

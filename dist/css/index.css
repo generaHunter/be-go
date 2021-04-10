@@ -12,8 +12,8 @@ body {
   }
   
  .flex-item-back{
-    height: 19.5px;
-    width: 12px;
+    height: 21.5px;
+    width: 15px;
     color: #EDEDED;
     margin-left: 10px;
  }
@@ -23,15 +23,15 @@ body {
     width: 51px;
     color: #FFFFFF;
     font-family: Avenir;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
  }
 
  .flex-item-notifation{
-    height: 24px;
-    width: 22px;
+    height: 26px;
+    width: 24px;
     margin-right: 10px;
  }
 
@@ -69,10 +69,10 @@ body {
 
   .all {
     height: 24px;
-    width: 85px;
+    width: 90px;
     color: #FFBE00;
     font-family: Avenir;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
@@ -83,10 +83,10 @@ body {
 
   .progress-text{
     height: 25px;
-    width: 85px;
+    width: 200px;
     color: #FFFFFF;
     font-family: Avenir;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
@@ -97,10 +97,10 @@ body {
 
   .started {
     height: 25px;
-    width: 85px;
+    width: 90px;
     color: #FFFFFF;
     font-family: Avenir;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
@@ -110,10 +110,10 @@ body {
 
   .completed{
     height: 25px;
-    width: 85px;
+    width: 90px;
     color: #FFFFFF;
     font-family: Avenir;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
@@ -142,6 +142,7 @@ body {
     line-height: 26px;
     text-align: center;
     margin-right: 15px;
+    margin-left: 15px;
   }
 
   .task-num {
@@ -166,31 +167,26 @@ body {
   }
 
   .flex-item-order1{
-    height: 106px;
-    width: 171px;
+    height: 150px;
+    width: 350px;
     border-radius: 8px;
     background-color: #10161C;
-    box-shadow: inset -2px -2px 4px 0 #040B11, inset 2px 2px 4px 0 #1C232A, 0 13px 9px 0 #000000;  
+    box-shadow: inset -2px -2px 4px 0 #040B11, inset 2px 2px 4px 0 #1C232A, 0 13px 9px 0 #000000;
+    padding-top: 15px;
   }
 
-  .flex-item-order2{
-    height: 106px;
-    width: 171px;
-    border-radius: 8px;
-    background-color: #10161C;
-    box-shadow: inset -2px -2px 4px 0 #040B11, inset 2px 2px 4px 0 #1C232A, 0 13px 9px 0 #000000;  
-  }
 
   .num-order{
     height: 20px;
     width: 119px;
     color: #FFFFFF;
     font-family: Avenir;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
-    margin: 15px;
+    margin: 20px;
+  
   }
 
   .name-order{
@@ -198,24 +194,29 @@ body {
     width: 89px;
     color: #C1C7D0;
     font-family: Avenir;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 16px;
-    margin: 15px;
+    margin: 20px;
   }
+
+
 
   .progress-order{
     height: 20px;
     width: 96px;
     color: #C1C7D0;
     font-family: Avenir;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 16px;
-    margin: 15px;
+    margin: 20px;
   }
+
+
+
 
   .flex-progress {
     display: flex;
@@ -226,16 +227,98 @@ body {
     list-style: none;
   }
 
-  .progress- {
-    height: 20px;
-    width: 96px;
-    color: #C1C7D0;
-    font-family: Avenir;
-    font-size: 12px;
-    font-weight: 300;
-    letter-spacing: 0;
-    line-height: 16px;
-    background-color: #10161C;
+
+  @media screen and (max-width: 600px) {
+    .flex-item-back{
+      height: 19.5px;
+      width: 12px;
+      margin-left: 10px;
+   }
+  
+   .flex-item-task{
+      height: 25px;
+      width: 51px;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 26px;
+   }
+  
+   .flex-item-notifation{
+      height: 24px;
+      width: 22px;
+      margin-right: 10px;
+   }
+
+    .all {
+      font-size: 14px;
+      width: 85px;
+    }
+  
+    .progress-text{
+      font-size: 14px;
+      width: 85px;
+    }
+  
+    .started {
+      font-size: 14px;
+      width: 85px;
+    }
+  
+    .completed{
+      font-size: 14px;
+      width: 85px;
+    }
+
+
+
+    .flex-item-order1{
+      height: 106px;
+      width: 171px;
+      padding-top: 5px;
+    }
+
+    .num-order{
+      font-size: 14px;
+    }
+
+    .name-order{
+      font-size: 12px;
+    }
+
+    .progress-order{
+      font-size: 12px;
+    }
+
+    .percentage {
+      font-size: 10px;
+    }
+
+    .day-left {
+      font-size: 10px;
+    }
+
+    .bi-download{
+      height: 13px;
+      width: 14px;
+      margin: 5px;
+      }
+
+      .vertical-bar{
+        box-sizing: border-box;
+        height: 21px;
+        width: 1px;
+      }
+
+      .bi-caret-down-fill{
+        height: 15px;
+        width: 14px;
+
+      }
+
+      .flex-item-static{
+        font-size: 16px;
+      }
   }
 
   .percentage {
@@ -243,7 +326,7 @@ body {
     width: 20px;
     color: #C1C7D0;
     font-family: Avenir;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 14px;
@@ -271,7 +354,7 @@ body {
     width: 62px;
     color: #C1C7D0;
     font-family: Avenir;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     letter-spacing: 0;
     line-height: 14px;
@@ -292,8 +375,193 @@ body {
     width: 69px;
     color: #FFFFFF;
     font-family: Avenir;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 900;
     letter-spacing: 0;
     line-height: 26px;
+  }
+
+  .flex-item-icon{
+    box-sizing: border-box;
+    height: 30px;
+    width: 60px;
+    border: 1px solid #1C232A;
+    border-radius: 4px;
+    background-color: #10161C;
+    box-shadow: inset -2px -2px 4px 0 #040B11, inset 2px 2px 4px 0 #1C232A;
+  }
+
+  .bi-download{
+  height: 20px;
+  width: 22px;
+  box-shadow: 0 3px 4px 0 #000000;
+  margin: 5px;
+  }
+
+  .vertical-bar{
+    box-sizing: border-box;
+    height: 35px;
+    width: 3px;
+    border: 1px solid #494C50;
+  }
+
+  .bi-caret-down-fill{
+    height: 25px;
+    width: 20px;
+    color: #C1C7D0;
+  }
+
+  .rayo {
+  height: 27.43px;
+  width: 16px;
+  background: linear-gradient(180deg, #FFD200 0%, #FFBE00 100%);
+  }
+
+
+  .flex-rectangule{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+    
+    border-radius: 8px; 
+    background-color: #10161C;
+    box-shadow: inset -2px -2px 4px 0 #040B11, inset 2px 2px 4px 0 #1C232A, 0 13px 9px 0 #000000;
+  }
+
+  .flex-item-rectangule{
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  .num-project{
+
+    color: #FFFFFF;
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+  
+  }
+
+  .subtitle-project{
+
+    color: #C1C7D0;
+    font-family: Avenir;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0;
+  
+  }
+
+  .line-vertical{
+    box-sizing: border-box;
+    height: 133px;
+    width: 1px;
+    border: 1px solid #1C232A;
+  }
+
+  .line-horizontal {
+  box-sizing: border-box;
+  height: 1px;
+  width: 450px;
+  border: 1px solid #1C232A;
+  }
+
+  .flex-card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    background-color:  #10161C;
+    align-items: center;
+  }
+
+  .flex-card-item2{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .flex-card-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  .flex-calendars {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+  }
+
+  .flex-item-calendar {
+    height: 25px;
+    width: 37px;
+    color: #FFFFFF;
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+
+  .month{
+    height: 25px;
+    width: 69px;
+    color: #FFBE00;
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 25px;
+    border-color:transparent transparent #FFBE00 transparent;
+    padding-bottom: 30px;
+    background-color: transparent;
+  }
+
+  .total{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+  .cantidad{
+    height: 61px;
+    width: 149.5px;
+    color: #FFFFFF;
+    font-family: Avenir;
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 61px;
+    text-align: center;
+  }
+
+  .dolar{
+    height: 26px;
+    width: 16.9px;
+    color: #FFFFFF;
+    font-family: ".SF NS Display";
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+
+  .chart-space{
+    box-sizing: border-box;
+    border: 1px solid #10161C;
+    border-radius: 16px;
+    background-color: #10161C;
+    box-shadow: inset 2px 2px 6px 0 #1C232A, inset -2px -2px 6px 0 #040B11;
+    margin-top: 30px;
   }
